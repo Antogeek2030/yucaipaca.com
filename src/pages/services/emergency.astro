@@ -1,0 +1,70 @@
+---
+import BaseHead from '../../components/BaseHead.astro';
+import Header from '../../components/Header.astro';
+import Footer from '../../components/Footer.astro';
+import { SITE_TITLE, PHONE, PHONE_TEL } from '../../consts';
+---
+
+<!doctype html>
+<html lang="en">
+<head>
+	<BaseHead title={`Emergency Plumbing | ${SITE_TITLE}`} description="Emergency plumbing service in Yucaipa, CA. Burst pipes, major leaks, and no-water emergencies — prompt response." />
+</head>
+<body>
+	<Header />
+
+	<section class="page-hero">
+		<div class="container">
+			<h1>Emergency Plumbing</h1>
+			<p>When water is flooding or you have no water at all — we respond promptly.</p>
+		</div>
+	</section>
+
+	<section class="content">
+		<div class="container">
+			<div class="content-grid">
+				<div>
+					<h2>Plumbing Emergencies We Handle</h2>
+					<p>Some plumbing problems cannot wait. We prioritize true emergencies so you can protect your property and restore service quickly.</p>
+					<ul>
+						<li>Burst or broken pipes</li>
+						<li>Major leaks flooding floors or walls</li>
+						<li>Sewer backups</li>
+						<li>No water to the home</li>
+						<li>Gas line concerns (coordinate with utility as needed)</li>
+						<li>Overflowing toilets or fixtures that will not shut off</li>
+					</ul>
+					
+					<h3>What to Do First</h3>
+					<ul>
+						<li>Shut off the main water valve if safe to do so</li>
+						<li>Turn off electricity to affected areas if water is near outlets</li>
+						<li>Call us with a clear description of the problem</li>
+					</ul>
+				</div>
+				<div>
+					<h3>Local Response</h3>
+					<p>As a Yucaipa-based plumber, we aim to respond as quickly as possible to emergency calls in our service area. Leave a detailed message if we are on another job — we return emergency calls promptly.</p>
+					
+					<h3>After the Emergency</h3>
+					<p>Once the immediate issue is under control, we can discuss permanent repairs, pipe replacement, or other work needed to prevent a repeat.</p>
+					
+					<div class="mt-2">
+						<a href={`tel:${PHONE_TEL}`} class="btn btn-primary">Call Now: {PHONE}</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="cta">
+		<div class="container">
+			<h2>Plumbing Emergency?</h2>
+			<p>Call right away for help in Yucaipa and nearby areas.</p>
+			<a href={`tel:${PHONE_TEL}`} class="btn btn-primary">Call {PHONE}</a>
+		</div>
+	</section>
+
+	<Footer />
+</body>
+</html>

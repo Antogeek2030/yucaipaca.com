@@ -1,0 +1,71 @@
+---
+import BaseHead from '../../components/BaseHead.astro';
+import Header from '../../components/Header.astro';
+import Footer from '../../components/Footer.astro';
+import { SITE_TITLE, PHONE, PHONE_TEL } from '../../consts';
+---
+
+<!doctype html>
+<html lang="en">
+<head>
+	<BaseHead title={`Fixture Installation | ${SITE_TITLE}`} description="Professional installation of toilets, faucets, sinks, showers, and garbage disposals in Yucaipa, CA." />
+</head>
+<body>
+	<Header />
+
+	<section class="page-hero">
+		<div class="container">
+			<h1>Fixture Installation</h1>
+			<p>Toilets, faucets, sinks, showers, and disposals installed right the first time.</p>
+		</div>
+	</section>
+
+	<section class="content">
+		<div class="container">
+			<div class="content-grid">
+				<div>
+					<h2>What We Install</h2>
+					<p>Whether you are upgrading a bathroom, replacing a failed fixture, or finishing a remodel, we install fixtures correctly and to code.</p>
+					<ul>
+						<li>Toilets (standard, comfort-height, dual-flush)</li>
+						<li>Faucets and shower valves</li>
+						<li>Kitchen and bathroom sinks</li>
+						<li>Garbage disposals</li>
+						<li>Shower and tub fixtures</li>
+						<li>Bidets and specialty fixtures</li>
+					</ul>
+					
+					<h3>What to Expect</h3>
+					<ul>
+						<li>Proper shutoff and isolation of water</li>
+						<li>Correct mounting, sealing, and connections</li>
+						<li>Leak testing after installation</li>
+						<li>Cleanup and brief walkthrough</li>
+					</ul>
+				</div>
+				<div>
+					<h3>Why Professional Installation Matters</h3>
+					<p>Improper installation can cause leaks, voids manufacturer warranties, and lead to water damage. We follow manufacturer guidelines and local plumbing codes so your new fixtures perform as intended.</p>
+					
+					<h3>Supply or Customer-Provided</h3>
+					<p>You can supply the fixtures or we can help source quality options that fit your budget and style. Either way, we install them carefully and leave the job clean.</p>
+					
+					<div class="mt-2">
+						<a href="/contact/" class="btn btn-primary">Request Installation Quote</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="cta">
+		<div class="container">
+			<h2>Ready for New Fixtures?</h2>
+			<p>Call today for a free, no-obligation installation estimate.</p>
+			<a href={`tel:${PHONE_TEL}`} class="btn btn-primary">Call {PHONE}</a>
+		</div>
+	</section>
+
+	<Footer />
+</body>
+</html>

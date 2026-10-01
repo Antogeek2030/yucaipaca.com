@@ -1,0 +1,103 @@
+---
+import BaseHead from '../components/BaseHead.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import { SITE_TITLE, SITE_DESCRIPTION, PHONE, PHONE_TEL } from '../consts';
+---
+
+<!doctype html>
+<html lang="en">
+<head>
+	<BaseHead title={`${SITE_TITLE} | Expert Local Plumbers`} description={SITE_DESCRIPTION} />
+</head>
+<body>
+	<Header />
+
+	<section class="hero">
+		<div class="container">
+			<h1>Plumbing Repair & Service Experts in Yucaipa, CA</h1>
+			<p>
+				Trusted local plumbers serving Yucaipa and surrounding communities.
+				Fast repairs, drain cleaning, water heaters, and emergency service — done right the first time.
+			</p>
+			<div class="hero-buttons">
+				<a href={`tel:${PHONE_TEL}`} class="btn btn-primary">Call Us: {PHONE}</a>
+				<a href="/contact/" class="btn btn-secondary">Get a Free Quote</a>
+			</div>
+		</div>
+	</section>
+
+	<section class="section" id="services">
+		<div class="container">
+			<div class="section-header">
+				<h2>Our Core Plumbing Services</h2>
+				<p>From clogged drains to full fixture installations, we keep Yucaipa homes and businesses running smoothly.</p>
+			</div>
+			<div class="cards">
+				<div class="card">
+					<h3>Plumbing Repair</h3>
+					<p>Leaks, running toilets, broken pipes, faucet issues, and more. Fast diagnosis and lasting repairs.</p>
+					<a href="/services/repair/">Learn more →</a>
+				</div>
+				<div class="card">
+					<h3>Drain Cleaning</h3>
+					<p>Professional drain and sewer cleaning to clear clogs and restore proper flow — no harsh chemicals needed.</p>
+					<a href="/services/drain-cleaning/">Learn more →</a>
+				</div>
+				<div class="card">
+					<h3>Water Heater Service</h3>
+					<p>Repair, replacement, and installation of tank and tankless water heaters for reliable hot water.</p>
+					<a href="/services/water-heater/">Learn more →</a>
+				</div>
+				<div class="card">
+					<h3>Emergency Plumbing</h3>
+					<p>Burst pipes, major leaks, and no-water emergencies. Prompt response when you need help most.</p>
+					<a href="/services/emergency/">Learn more →</a>
+				</div>
+				<div class="card">
+					<h3>Fixture Installation</h3>
+					<p>Toilets, faucets, sinks, showers, and garbage disposals installed correctly and to code.</p>
+					<a href="/services/installation/">Learn more →</a>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="section section-alt">
+		<div class="container">
+			<div class="section-header">
+				<h2>Why Choose Us</h2>
+				<p>Local plumbers who treat your home with respect and get the job done right.</p>
+			</div>
+			<div class="cards">
+				<div class="card">
+					<h3>Licensed & Insured</h3>
+					<p>Fully licensed California plumbers with insurance for your protection and peace of mind.</p>
+				</div>
+				<div class="card">
+					<h3>Upfront Pricing</h3>
+					<p>Clear estimates before work begins. No surprise fees or hidden charges.</p>
+				</div>
+				<div class="card">
+					<h3>Local & Responsive</h3>
+					<p>Based in Yucaipa. We know the area and respond quickly to service calls.</p>
+				</div>
+				<div class="card">
+					<h3>Quality Workmanship</h3>
+					<p>We stand behind our repairs and installations with workmanship guarantees.</p>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="cta">
+		<div class="container">
+			<h2>Need a Plumber in Yucaipa?</h2>
+			<p>Call now for fast, professional plumbing service. Free estimates available.</p>
+			<a href={`tel:${PHONE_TEL}`} class="btn btn-primary">Call {PHONE}</a>
+		</div>
+	</section>
+
+	<Footer />
+</body>
+</html>

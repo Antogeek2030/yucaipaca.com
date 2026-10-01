@@ -1,0 +1,70 @@
+---
+import BaseHead from '../../components/BaseHead.astro';
+import Header from '../../components/Header.astro';
+import Footer from '../../components/Footer.astro';
+import { SITE_TITLE, PHONE, PHONE_TEL } from '../../consts';
+---
+
+<!doctype html>
+<html lang="en">
+<head>
+	<BaseHead title={`Drain Cleaning | ${SITE_TITLE}`} description="Professional drain and sewer cleaning in Yucaipa, CA. Clear clogs and restore proper flow without harsh chemicals." />
+</head>
+<body>
+	<Header />
+
+	<section class="page-hero">
+		<div class="container">
+			<h1>Drain Cleaning</h1>
+			<p>Fast, thorough clearing of clogged drains and sewer lines in Yucaipa.</p>
+		</div>
+	</section>
+
+	<section class="content">
+		<div class="container">
+			<div class="content-grid">
+				<div>
+					<h2>Drains We Clear</h2>
+					<p>Slow or stopped drains are one of the most common plumbing calls. We clear clogs safely and effectively.</p>
+					<ul>
+						<li>Kitchen sink and disposal drains</li>
+						<li>Bathroom sinks, tubs, and showers</li>
+						<li>Toilet clogs</li>
+						<li>Main sewer line blockages</li>
+						<li>Floor drains and laundry drains</li>
+					</ul>
+					
+					<h3>How We Clear Drains</h3>
+					<ul>
+						<li>Inspection to locate the blockage</li>
+						<li>Cable (snake) or hydro-jetting as needed</li>
+						<li>Camera inspection available for recurring issues</li>
+						<li>Advice on preventing future clogs</li>
+					</ul>
+				</div>
+				<div>
+					<h3>Avoid Chemical Drain Cleaners</h3>
+					<p>Harsh chemical cleaners can damage pipes, harm the environment, and often fail to fully clear the clog. Professional mechanical cleaning is safer and more effective for most blockages.</p>
+					
+					<h3>Recurring Clogs?</h3>
+					<p>If the same drain keeps clogging, there may be a deeper issue — tree roots, collapsed pipe, or improper slope. We can help diagnose the root cause and recommend a lasting solution.</p>
+					
+					<div class="mt-2">
+						<a href="/contact/" class="btn btn-primary">Schedule Drain Cleaning</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="cta">
+		<div class="container">
+			<h2>Clogged Drain?</h2>
+			<p>Call today for prompt drain cleaning service in Yucaipa.</p>
+			<a href={`tel:${PHONE_TEL}`} class="btn btn-primary">Call {PHONE}</a>
+		</div>
+	</section>
+
+	<Footer />
+</body>
+</html>

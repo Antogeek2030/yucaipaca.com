@@ -1,0 +1,67 @@
+---
+import BaseHead from '../../components/BaseHead.astro';
+import Header from '../../components/Header.astro';
+import Footer from '../../components/Footer.astro';
+import { SITE_TITLE, PHONE, PHONE_TEL } from '../../consts';
+---
+
+<!doctype html>
+<html lang="en">
+<head>
+	<BaseHead title={`Water Heater Service | ${SITE_TITLE}`} description="Water heater repair, replacement, and installation in Yucaipa, CA. Tank and tankless systems." />
+</head>
+<body>
+	<Header />
+
+	<section class="page-hero">
+		<div class="container">
+			<h1>Water Heater Service</h1>
+			<p>Repair, replacement, and installation of tank and tankless water heaters.</p>
+		</div>
+	</section>
+
+	<section class="content">
+		<div class="container">
+			<div class="content-grid">
+				<div>
+					<h2>Water Heater Services</h2>
+					<p>Reliable hot water is essential. We service both traditional tank and modern tankless water heaters.</p>
+					<ul>
+						<li>No hot water or insufficient hot water</li>
+						<li>Leaking tank or fittings</li>
+						<li>Strange noises, odors, or rusty water</li>
+						<li>Pilot light and ignition issues</li>
+						<li>Thermostat and element replacement</li>
+						<li>Full water heater replacement</li>
+						<li>Tankless installation and maintenance</li>
+					</ul>
+					
+					<h3>Repair vs. Replace</h3>
+					<p>We will honestly assess whether a repair makes sense or if replacement is the better long-term value — based on age, condition, and efficiency.</p>
+				</div>
+				<div>
+					<h3>Tankless Options</h3>
+					<p>Tankless (on-demand) water heaters can provide endless hot water and may reduce energy use. We can help you decide if a tankless upgrade is right for your home and install it properly.</p>
+					
+					<h3>Local Expertise</h3>
+					<p>Southern California water conditions and code requirements are familiar territory. We size systems correctly and ensure safe, code-compliant installation and venting.</p>
+					
+					<div class="mt-2">
+						<a href="/contact/" class="btn btn-primary">Request Water Heater Quote</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="cta">
+		<div class="container">
+			<h2>Hot Water Problems?</h2>
+			<p>Call today for water heater service in Yucaipa.</p>
+			<a href={`tel:${PHONE_TEL}`} class="btn btn-primary">Call {PHONE}</a>
+		</div>
+	</section>
+
+	<Footer />
+</body>
+</html>

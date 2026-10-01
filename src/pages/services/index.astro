@@ -1,0 +1,65 @@
+---
+import BaseHead from '../../components/BaseHead.astro';
+import Header from '../../components/Header.astro';
+import Footer from '../../components/Footer.astro';
+import { SITE_TITLE, PHONE, PHONE_TEL } from '../../consts';
+---
+
+<!doctype html>
+<html lang="en">
+<head>
+	<BaseHead title={`Plumbing Services | ${SITE_TITLE}`} description="Professional plumbing repair, drain cleaning, water heater service, emergency plumbing, and fixture installation in Yucaipa, CA and surrounding areas." />
+</head>
+<body>
+	<Header />
+
+	<section class="page-hero">
+		<div class="container">
+			<h1>Our Plumbing Services</h1>
+			<p>Complete plumbing solutions for Yucaipa homes and businesses.</p>
+		</div>
+	</section>
+
+	<section class="section">
+		<div class="container">
+			<div class="cards">
+				<div class="card">
+					<h3>Plumbing Repair</h3>
+					<p>Leaks, toilets, faucets, pipes, and more. Fast, lasting repairs by experienced local plumbers.</p>
+					<a href="/services/repair/">Learn more →</a>
+				</div>
+				<div class="card">
+					<h3>Drain Cleaning</h3>
+					<p>Professional drain and sewer cleaning to clear stubborn clogs and restore proper drainage.</p>
+					<a href="/services/drain-cleaning/">Learn more →</a>
+				</div>
+				<div class="card">
+					<h3>Water Heater Service</h3>
+					<p>Repair, replacement, and installation of tank and tankless water heaters.</p>
+					<a href="/services/water-heater/">Learn more →</a>
+				</div>
+				<div class="card">
+					<h3>Emergency Plumbing</h3>
+					<p>Prompt response for burst pipes, major leaks, and other plumbing emergencies.</p>
+					<a href="/services/emergency/">Learn more →</a>
+				</div>
+				<div class="card">
+					<h3>Fixture Installation</h3>
+					<p>Toilets, faucets, sinks, showers, and disposals installed correctly and to code.</p>
+					<a href="/services/installation/">Learn more →</a>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="cta">
+		<div class="container">
+			<h2>Need Help Choosing the Right Service?</h2>
+			<p>Call us for a free consultation. We’ll help you decide the best path forward.</p>
+			<a href={`tel:${PHONE_TEL}`} class="btn btn-primary">Call {PHONE}</a>
+		</div>
+	</section>
+
+	<Footer />
+</body>
+</html>
